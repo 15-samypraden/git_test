@@ -1,4 +1,55 @@
 <!DOCTYPE html>
+<style>
+    :root{
+        --red-bg: #FF0000;
+        --light-violet-bg: #CF9FFF;
+        --dark-scarlet-text: #560319;
+    }
+    @media (max-width: 750px){
+        :root{
+            --light-violet-bg: #ADD8E6;
+            --red-bg: #FFFFFF;
+            --dark-scarlet-text: #FFFFFF;
+        }
+    }
+    #characters{
+        background-color: #FFC0CB;
+        margin: 0px 20px 0px 20px;
+        padding: 0px 0px 0px 600px;
+    }
+    #heading1{
+        color: var(--red-bg, #FF0000);
+        padding: 0px 0px 0px 600px;
+    }
+    #heading2{
+        color: var(--red-bg, #FF0000);
+        padding: 0px 0px 0px 575px;
+    }
+    #content{
+        padding: 0px 0px 0px 20px;
+    }
+    #footer{
+        padding: 0px 0px 0px 20px;
+    }
+    #image{
+        border-color: var(--red-bg, #FF0000);
+        border-width: 20px;
+        border-style: solid;
+        margin: 0px 0px 0px 20px;
+    }
+    #beginning{
+        margin: 0px 0px 0px 20px;
+        background-color: var(--light-violet-bg, #CF9FFF);
+        color: var(--dark-scarlet-text, #560319);
+    }
+    .dark-scarlet{
+        color: var(--dark-scarlet-text, #560319) !important;
+    }
+    [type='radio']{
+        background-color: var(--light-violet-bg, #CF9FFF);
+        margin: 0px 0px 0px 20px;
+    }
+    </style>
 <html>
     <head>
         <title>
@@ -6,30 +57,30 @@
         </title>
     </head>
     <body>
-        <h1>
+        <div id="beginning">
+        <h1 id="heading1" class="dark-scarlet">
             Cat Photo App
         </h1>
-        <h2>
+        <h2 id="heading2" class="dark-scarlet">
             Made by Samar Pradhan
         </h2>
-        <p>Jump to <a href="#footer">bottom of page</a></p>
-        <p>
+        <p id="content">Jump to <a href="#footer">bottom of page</a></p>
+        <p id="content">
             This is an app for cat photos. Cats are wonderful creatures who like milk.
             The above is just lorem ipsum. This is my first HMTL webpage. Check it out.
         </p>
-        <img src="https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg" alt="Cute kitty cat"
-        <p>
+        </div>
+        <img id="image" src="https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg" alt="Cute kitty cat">
+        <p id="content">
             Here is the <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffilmdaily.co%2Fnews%2Fcutest-cat-videos%2F&psig=AOvVaw3QaPsBKWanNVFDorcp-Vnm&ust=1635920679696000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjSqcqF-fMCFQAAAAAdAAAAABAJ">link</a> for more cat photos.
         </p>
-        <div>
+        <div id="characters">
         <p>Things cats love:</p>
             <ol>
                 <li>Ball of Yarn</li>
                 <li>Fish to eat</li>
                 <li>Scritches</li>
             </ol>
-        </div>
-        <div>
             <p>Things cats hate</p>
             <ol>
                 <li>Dogs</li>
